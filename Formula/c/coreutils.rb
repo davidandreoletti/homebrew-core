@@ -28,6 +28,7 @@ class Coreutils < Formula
     depends_on "texinfo" => :build
     depends_on "wget" => :build
     depends_on "xz" => :build
+    depends_on "openssl" => :build
   end
 
   depends_on "gmp"
@@ -60,6 +61,7 @@ class Coreutils < Formula
       --prefix=#{prefix}
       --program-prefix=g
       --with-gmp
+      --with-openssl
       --without-selinux
     ]
 
